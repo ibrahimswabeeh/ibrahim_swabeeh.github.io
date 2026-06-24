@@ -7,9 +7,17 @@ body{
     line-height: 1.6;
 }
 
-header{
+h1{
+    color:#0a66c2;
     text-align:center;
-    padding:30px;
+}
+
+h2{
+    color:#2c3e50;
+}
+
+h3{
+    color:#34495e;
 }
 
 section{
@@ -18,16 +26,4 @@ section{
     padding:20px;
     border-radius:10px;
     box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-h1{
-    color:#0a66c2;
-}
-
-h2{
-    color:#2c3e50;
-}
-
-ul{
-    padding-left:20px;
 }
