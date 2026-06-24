@@ -1,160 +1,114 @@
+```css
+/* =========================
+   HEADER SECTION
+========================= */
 
-/* Google Font Alternative */
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f5f7fa;
-    color: #333;
-    max-width: 1100px; 
-    margin: auto;
-    padding: 30px;
-    line-height: 1.8;
-}
-
-/* Header Section */
 header{
+    position: relative;
     text-align: center;
-    background: linear-gradient(135deg, #0a66c2, #004182);
-    color: white;
-    padding: 50px 30px;
-    border-radius: 15px;
+    padding: 60px 30px;
     margin-bottom: 30px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-header h1{
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: white;
-}
-
-header h2{
-    color: #e8f1ff;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-header p{
-    font-size: 1.1rem;
-    opacity: 0.95;
-}
-
-/* Section Cards */
-section{
-    background: white;
-    padding: 25px;
-    margin-bottom: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-}
-
-section:hover{
-    transform: translateY(-5px);
-}
-
-/* Headings */
-h2{
-    color: #0a66c2;
-    border-bottom: 3px solid #0a66c2;
-    padding-bottom: 8px;
-    margin-bottom: 15px;
-}
-
-h3{
-    color: #2c3e50;
-    margin-top: 20px;
-}
-
-/* Lists */
-ul{
-    padding-left: 20px;
-}
-
-li{
-    margin-bottom: 8px;
-}
-
-/* Links */
-a{
-    color: #0a66c2;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-a:hover{
-    color: #004182;
-    text-decoration: underline;
-}
-
-/* Resume Button */
-.resume-btn{
-    display: inline-block;
-    background: #0a66c2;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 10px;
-    transition: 0.3s;
-}
-
-.resume-btn:hover{
-    background: #004182;
-    color: white;
-    text-decoration: none;
-}
-
-/* Skills Grid */
-.skills{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skills span{
-    background: #e8f1ff;
-    color: #0a66c2;
-    padding: 8px 14px;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-/* Profile Photo */
 .profile-pic{
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 5px solid white;
     object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+header h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+header p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Resume Button */
+
+.resume-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+
+    background: #0a66c2;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.resume-btn:hover{
+    background: #004182;
+}
+
+/* =========================
+   ABOUT ME SECTION
+========================= */
+
+section h2{
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
-/* Footer */
-footer{
-    text-align: center;
-    padding: 20px;
-    color: #666;
-    margin-top: 30px;
+section p{
+    font-size: 1.15rem;
+    line-height: 1.9;
 }
 
-/* Mobile Responsive */
+/* Professional Summary */
+
+section:first-of-type p{
+    font-size: 1.25rem;
+    line-height: 2;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
 @media(max-width:768px){
 
-    body{
-        padding: 15px;
+    .resume-btn{
+        position: static;
+        display: inline-block;
+        margin-bottom: 20px;
     }
 
     header h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     header h2{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
-    section{
-        padding: 20px;
+    header p{
+        font-size: 1.1rem;
+    }
+
+    .profile-pic{
+        width: 140px;
+        height: 140px;
     }
 }
-
+```
